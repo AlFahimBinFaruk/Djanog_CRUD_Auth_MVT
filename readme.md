@@ -7,3 +7,4 @@
 * File Upload
   * Pillow
 * SQLite DB
+* Flash Messages
