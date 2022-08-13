@@ -1,0 +1,14 @@
+{% extends "main.html" %} {% block content %}
+<div class="d-flex justify-content-center align-items-center my-5 flex-column">
+  <form action="" method="post">
+    {% csrf_token %}
+    <h6>Do you want to delete -- {{obj}}??</h6>
+    <div class="d-flex justify-content-between">
+      <a href="{{request.META.HTTP_REFERER}}">go back</a>
+      <button type="submit" value="confirm" class="btn btn-danger">
+        Delete
+      </button>
+    </div>
+  </form>
+</div>
+{% endblock content %}
